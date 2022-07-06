@@ -1,0 +1,23 @@
+{
+  "name": "testingdev",
+  "version": "0.0.1",
+  "author": {
+    "name": "Fabio Sánchez",
+    "email": "fabio.ssanchez92@gmail.com",
+    "url": "https:cotrafa.com.co"
+  },
+  "description": "Biblioteca de componentes onnovacion",
+  "keywords": [
+    "angular",
+    "ejemplo",
+    "biblioteca"
+  ],
+  "repository": {},
+  "peerDependencies": {
+    "@angular/common": "^13.3.0",
+    "@angular/core": "^13.3.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}

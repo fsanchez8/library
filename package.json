@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build-library": "ng build testingdev",
+    "start-library": "npm link projects/testingdev && ng serve -o --watch",
+    "install-library-local": "npm run build-library & npm i dist/testingdev"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +22,7 @@
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
     "rxjs": "~7.5.0",
+    "testingdev": "file:dist/testingdev",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
@@ -34,6 +38,7 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "ng-packagr": "^13.0.0",
     "typescript": "~4.6.2"
   }
 }
